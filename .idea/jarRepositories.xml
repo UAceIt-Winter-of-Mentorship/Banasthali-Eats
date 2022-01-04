@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="67e99dab-af3d-41ee-8387-bf56804b93ef" />
+      <option name="name" value="67e99dab-af3d-41ee-8387-bf56804b93ef" />
+      <option name="url" value="https://com.microsoft.sqlserver.jdbc.SQLServerDataSource" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="13062894-8a64-44dd-bb44-985e8bab3dd1" />
+      <option name="name" value="13062894-8a64-44dd-bb44-985e8bab3dd1" />
+      <option name="url" value="https://p693030487728-g3m1h9@gcp-sa-cloud-sql.iam.gserviceaccount.com" />
+    </remote-repository>
+  </component>
+</project>
