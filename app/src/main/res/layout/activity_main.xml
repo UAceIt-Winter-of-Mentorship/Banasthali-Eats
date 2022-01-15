@@ -8,11 +8,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="299dp"
-        android:text="HELLO WORLD"
+        android:layout_width="470dp"
+        android:layout_height="743dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:foregroundGravity="center_vertical|center"
+        android:gravity="center"
+        android:text="Banasthali\n Eats"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
