@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "955716908927",
+    "project_id": "foodzone-7ec26",
+    "storage_bucket": "foodzone-7ec26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955716908927:android:d1c7c32005a40d037c8c4a",
+        "android_client_info": {
+          "package_name": "com.example.banasthali_eats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955716908927-vmki2v9fsm46b6fp38pv7jikpmf0rk28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiiKb5BTJacOWE04RkBCBbRrkDjEr0C34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955716908927-vmki2v9fsm46b6fp38pv7jikpmf0rk28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
