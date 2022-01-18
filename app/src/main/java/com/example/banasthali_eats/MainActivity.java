@@ -17,13 +17,16 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private FirebaseAuth mAuth;
+    private FirebaseFirestore fStore;
 
     private TextView signUp, forgotPassword;
     private EditText email, password;
     private Button login;
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
 
         signUp = findViewById(R.id.txtSignUp);
         signUp.setOnClickListener(this);
@@ -78,23 +82,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             password.requestFocus();
             return;
         }
-        mAuth.signInWithEmailAndPassword(mail, pwd)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            // user has been logged in
-                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                            if(user.isEmailVerified()){
-                                startActivity(new Intent(MainActivity.this, UserActivity.class));
-                            }else{
-                                user.sendEmailVerification();
-                                Toast.makeText(MainActivity.this, "Check your email to verify account.", Toast.LENGTH_LONG).show();
-                            }
-                        }else{
-                            Toast.makeText(MainActivity.this, "Failed to logged in please check you credentials", Toast.LENGTH_LONG).show();
-                        }
+
+        mAuth.signInWithEmailAndPassword(mail, pwd).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if(task.isSuccessful()){
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    if(user.isEmailVerified()){
+                        startActivity(new Intent(MainActivity.this, UserActivity.class));
+                    }else{
+                        Toast.makeText(MainActivity.this, "Please verify your account.", Toast.LENGTH_LONG).show();
+                        user.sendEmailVerification();
                     }
-                });
+                }else{
+                    Toast.makeText(MainActivity.this, "Failed to logged in please check you credentials", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+//        mAuth.signInWithEmailAndPassword(mail, pwd)
+//                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<AuthResult> task) {
+//                        if(task.isSuccessful()){
+//                            // user has been logged in
+//                            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+//                            if(user.isEmailVerified()){
+//                                startActivity(new Intent(MainActivity.this, UserActivity.class));
+//                            }else{
+//                                user.sendEmailVerification();
+//                                Toast.makeText(MainActivity.this, "Check your email to verify account.", Toast.LENGTH_LONG).show();
+//                            }
+//                        }else{
+//                            Toast.makeText(MainActivity.this, "Failed to logged in please check you credentials", Toast.LENGTH_LONG).show();
+//                        }
+//                    }
+//                });
     }
 }
