@@ -13,10 +13,10 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".Signin"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Signin"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.BanasthaliEats.NoActionBar">
