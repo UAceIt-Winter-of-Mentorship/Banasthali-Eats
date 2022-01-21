@@ -10,13 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BanasthaliEats">
         <activity
-            android:name=".login"
+            android:name=".canc"
+            android:exported="false" />
+        <activity
+            android:name=".canb"
+            android:exported="false" />
+        <activity
+            android:name=".Signin"
+            android:exported="false" />
+        <activity
+            android:name=".cana"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Signin"
+            android:name=".login"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.BanasthaliEats.NoActionBar">
