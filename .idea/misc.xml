@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/activity_cana.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/activity_canb.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/activity_login.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/activity_signin.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/fragment_calls.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/fragment_chats.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/pranavi/AndroidStudioProjects/Eats/app/src/main/res/layout/fragment_status.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
