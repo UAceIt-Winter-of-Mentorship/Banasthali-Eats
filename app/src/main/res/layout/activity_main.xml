@@ -12,7 +12,7 @@
         android:layout_width="162dp"
         android:layout_height="53dp"
         android:layout_marginStart="138dp"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="138dp"
         android:onClick="login"
         android:text="Login"
@@ -20,14 +20,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/reg"
         android:layout_width="165dp"
         android:layout_height="54dp"
         android:layout_marginStart="164dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="153dp"
         android:onClick="signup"
         android:text="Register"
@@ -36,4 +36,16 @@
         app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/log" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="337dp"
+        android:layout_height="264dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/be" />
 </androidx.constraintlayout.widget.ConstraintLayout>
