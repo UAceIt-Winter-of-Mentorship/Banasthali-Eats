@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BanasthaliEats">
         <activity
+            android:name=".pharmacyCanteen"
+            android:exported="false" />
+        <activity
+            android:name=".lawCanteen"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseCanteen"
+            android:exported="false" />
+        <activity
+            android:name=".KCanteen"
+            android:exported="false" />
+        <activity
+            android:name=".PageAdapter"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPassword"
             android:exported="false" />
         <activity
