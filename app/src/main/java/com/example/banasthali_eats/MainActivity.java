@@ -19,7 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private FirebaseAuth mAuth;
     private FirebaseFirestore fStore;
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(task.isSuccessful()){
                     FirebaseUser user = mAuth.getCurrentUser();
                     if(user.isEmailVerified()){
-                        startActivity(new Intent(MainActivity.this, UserActivity.class));
+                        startActivity(new Intent(MainActivity.this, ChooseCanteen.class));
                     }else{
                         Toast.makeText(MainActivity.this, "Please verify your account.", Toast.LENGTH_LONG).show();
                         user.sendEmailVerification();

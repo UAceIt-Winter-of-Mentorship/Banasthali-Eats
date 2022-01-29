@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "70055511808",
-    "project_id": "foodie-dcb74",
-    "storage_bucket": "foodie-dcb74.appspot.com"
+    "project_number": "558200883984",
+    "project_id": "banasthali-eats-a46af",
+    "storage_bucket": "banasthali-eats-a46af.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:70055511808:android:837f9c09898c00ae91d5e5",
+        "mobilesdk_app_id": "1:558200883984:android:2117835e1f4ece73f87395",
         "android_client_info": {
           "package_name": "com.example.banasthali_eats"
         }
       },
       "oauth_client": [
         {
-          "client_id": "70055511808-5q6miqodn9lavrehg0bui65qq9ktrnkl.apps.googleusercontent.com",
+          "client_id": "558200883984-kot7gujs8kvudj7bculandk4941jf6e7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD9S0zCs47H9k0uJbHNRVccpuuovQ-5rPo"
+          "current_key": "AIzaSyA7nQSgop6J5KRJuuzajoLSuvAPSfrreOM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "70055511808-5q6miqodn9lavrehg0bui65qq9ktrnkl.apps.googleusercontent.com",
+              "client_id": "558200883984-kot7gujs8kvudj7bculandk4941jf6e7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
