@@ -4,15 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/back"
+    android:padding="5dp"
+    tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="299dp"
-        android:text="HELLO WORLD"
+        android:id="@+id/textView"
+        android:layout_width="304dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/bevan"
+        android:text="@string/canteen"
+        android:textAlignment="center"
+        android:textColor="#F3EFEF"
+        android:textSize="48sp"
+        android:textStyle="normal"
+        android:transitionName="canteen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882194751758",
+    "project_id": "banasthali-eats-d326c",
+    "storage_bucket": "banasthali-eats-d326c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882194751758:android:836b313847d5588ea9775f",
+        "android_client_info": {
+          "package_name": "com.example.banasthali_eats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882194751758-n8hpcid3t9feqo0ga2etcge3eeukdli8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1T7G_3LnZL-wWrS65KASem_ytaHpA9gU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882194751758-n8hpcid3t9feqo0ga2etcge3eeukdli8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
