@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,7 +68,7 @@ public class mainCourse extends Fragment {
         }
 
     }
-
+static ArrayList<Mainmodel> list;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -76,13 +77,13 @@ public class mainCourse extends Fragment {
         order = view.findViewById(R.id.order);
         recyclerView.setHasFixedSize(true);
 
-        ArrayList<Mainmodel> list = new ArrayList<>();
-        list.add(new Mainmodel(R.drawable.pizza, "Pizza", "80",R.drawable.add,R.drawable.minus,"0"));
-        list.add(new Mainmodel(R.drawable.pizza, "Momos", "60",R.drawable.add,R.drawable.minus,"0"));
-        list.add(new Mainmodel(R.drawable.pizza, "burger", "35",R.drawable.add,R.drawable.minus,"0"));
-        list.add(new Mainmodel(R.drawable.pizza, "sandwich", "30",R.drawable.add,R.drawable.minus,"0"));
-        list.add(new Mainmodel(R.drawable.pizza, "Pizza", "80",R.drawable.add,R.drawable.minus,"0"));
-        list.add(new Mainmodel(R.drawable.pizza, "Pizza", "80",R.drawable.add,R.drawable.minus,"0"));
+        list = new ArrayList<>();
+        list.add(new Mainmodel(R.drawable.pizza, "Pizza", "80",R.drawable.add,R.drawable.minus,0));
+        list.add(new Mainmodel(R.drawable.pizza, "Momos", "60",R.drawable.add,R.drawable.minus,0));
+        list.add(new Mainmodel(R.drawable.pizza, "burger", "35",R.drawable.add,R.drawable.minus,0));
+        list.add(new Mainmodel(R.drawable.pizza, "sandwich", "30",R.drawable.add,R.drawable.minus,0));
+        list.add(new Mainmodel(R.drawable.pizza, "Pizza", "80",R.drawable.add,R.drawable.minus,0));
+        list.add(new Mainmodel(R.drawable.pizza, "Pizza", "80",R.drawable.add,R.drawable.minus,0));
 
         recyclerView.setAdapter(new mainAdapter(list,getContext()));
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -90,19 +91,22 @@ public class mainCourse extends Fragment {
         order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ArrayList<Mainmodel> list1 = mainAdapter.model1;
-                for(int i=0;i<list1.size();i++){
-                    String a = list1.get(i).getTcount();
-                    int n = Integer.parseInt(a);
-                    Toast.makeText(getContext().getApplicationContext(), list1.get(i).getName()+list1.get(i).getTcount(), Toast.LENGTH_SHORT).show();
+                list=mainAdapter.list;
+                Log.e("hi from mi",list.toString());
+                 for(int i=0;i<list.size();i++){
+                    int n = list.get(i).getTcount();
+                    Log.e("HI from mi",n+" "+list.get(i).getName());
+                   // Toast.makeText(getContext(), list.get(i).getName()+n, Toast.LENGTH_SHORT).show();
                     if(n > 0){
-                        Toast.makeText(getContext().getApplicationContext(), "order placing", Toast.LENGTH_SHORT).show();
+                        Log.e("Hi","order placed");
+                        Toast.makeText(getActivity(), "order placing", Toast.LENGTH_SHORT).show();
                     }
                     else
-                     Toast.makeText(getContext().getApplicationContext(), n+"order is not placing", Toast.LENGTH_SHORT).show();
-                }
+                        Log.e("HI ",n+" ehisa");
+                 }
             }
         });
+
         // Inflate the layout for this fragment roj
         return view;
     }

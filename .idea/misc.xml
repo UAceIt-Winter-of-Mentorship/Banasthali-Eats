@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/BE/app/src/main/res/layout/fragment_main_course.xml" value="0.1" />
+        <entry key="..\:/BE/app/src/main/res/layout/sample_layout.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/namra/Banasthali-Eats/app/src/main/res/drawable/round_btn.xml" value="0.1685185185185185" />
         <entry key="..\:/Users/namra/Banasthali-Eats/app/src/main/res/drawable/rounded_btn.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/namra/Banasthali-Eats/app/src/main/res/layout/activity_home.xml" value="0.16666666666666666" />
@@ -20,7 +22,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="1.8 (36)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8 (36)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$" />
   </component>
 </project>

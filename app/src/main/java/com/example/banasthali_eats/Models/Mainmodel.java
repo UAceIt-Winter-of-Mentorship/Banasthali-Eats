@@ -1,19 +1,21 @@
 package com.example.banasthali_eats.Models;
 
+import androidx.annotation.NonNull;
+
 public class Mainmodel{
     int image;
-    String name,price,Tcount;
-    int add,minus;
+    String name,price;
+    int add,minus,Tcount;
 
 
 
-    public Mainmodel(int image, String name, String price,int add,int minus,String Tcount) {
+    public Mainmodel(int image, String name, String price,int add,int minus,int tcount) {
         this.image = image;
         this.name = name;
         this.price = price;
         this.add = add;
         this.minus = minus;
-        this.Tcount = Tcount;
+        this.Tcount = tcount;
     }
 
 
@@ -41,11 +43,17 @@ public class Mainmodel{
         this.price = price;
     }
 
-    public String getTcount() {
+    public int getTcount() {
         return Tcount ;
     }
 
-    public void setTcount(String count) {
+    public void setTcount(int count) {
         this.Tcount = Tcount;
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return name+" "+Tcount;
     }
 }
