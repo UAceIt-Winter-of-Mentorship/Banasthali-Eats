@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderPage">
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/semibold"
+        android:text="MITSGeats"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="376dp"
+        android:layout_height="35dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="86dp">
+
+        <SearchView
+            android:layout_width="179dp"
+            android:layout_height="match_parent" />
+    </SearchView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/allBtn"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/optionsbtn"
+                android:fontFamily="@font/semibold"
+                android:text="All" />
+
+            <Button
+                android:id="@+id/fastFoodBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/optionsbtn"
+                android:fontFamily="@font/semibold"
+                android:text="Fast Foods" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+            <Button
+                android:id="@+id/drinksBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/optionsbtn"
+                android:fontFamily="@font/semibold"
+                android:text="Drinks" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
