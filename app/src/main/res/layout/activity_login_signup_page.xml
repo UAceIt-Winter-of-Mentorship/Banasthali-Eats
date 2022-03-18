@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_signup_login"
+    tools:context=".LoginSignupPage">
+
+
+    <Button
+        android:id="@+id/signUp_login"
+        android:layout_width="376dp"
+        android:layout_height="60dp"
+        android:background="@drawable/getstarted_btn"
+        android:fontFamily="@font/medium"
+        android:text="Sign up / Login"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="415dp" />
+
+    <Button
+        android:id="@+id/googleBtn"
+        android:layout_width="379dp"
+        android:layout_height="60dp"
+        android:background="@drawable/getstarted_btn"
+        android:fontFamily="@font/medium"
+        android:text="Continue with Google"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+    <TextView
+        android:id="@+id/brandName"
+        android:layout_width="275dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/semibold"
+        android:text="MITSGeats"
+        android:textColor="#4D4DC5"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/tagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:text="eat from your hostel"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <ImageView
+        android:id="@+id/brandLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/brand_logo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:text="or"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="491dp" />>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

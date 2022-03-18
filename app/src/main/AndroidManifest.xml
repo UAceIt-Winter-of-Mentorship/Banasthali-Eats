@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BanasthaliEats">
         <activity
+            android:name=".order_placed"
+            android:exported="false" />
+        <activity
+            android:name=".payment_page"
+            android:exported="false" />
+        <activity
+            android:name=".orderPage"
+            android:exported="false" />
+        <activity
+            android:name=".boardingPage"
+            android:exported="false" />
+        <activity
+            android:name=".SignupPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSignupPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
