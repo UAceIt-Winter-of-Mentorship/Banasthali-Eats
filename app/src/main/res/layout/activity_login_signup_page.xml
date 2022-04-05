@@ -10,69 +10,96 @@
 
     <Button
         android:id="@+id/signUp_login"
-        android:layout_width="376dp"
+        android:layout_width="379dp"
         android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="71dp"
         android:background="@drawable/getstarted_btn"
         android:fontFamily="@font/medium"
         android:text="Sign up / Login"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="415dp" />
+        app:layout_constraintBottom_toTopOf="@+id/googleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagLine" />
 
     <Button
         android:id="@+id/googleBtn"
         android:layout_width="379dp"
         android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="285dp"
         android:background="@drawable/getstarted_btn"
         android:fontFamily="@font/medium"
         android:text="Continue with Google"
         android:textSize="20dp"
         android:textStyle="normal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="546dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUp_login" />
 
     <TextView
         android:id="@+id/brandName"
-        android:layout_width="275dp"
-        android:layout_height="70dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="22dp"
         android:fontFamily="@font/semibold"
         android:text="MITSGeats"
         android:textColor="#4D4DC5"
         android:textSize="50dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tagLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brandLogo"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tagLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="212dp"
         android:fontFamily="@font/medium"
         android:text="eat from your hostel"
         android:textColor="@color/black"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="246dp" />
+        app:layout_constraintBottom_toTopOf="@+id/orText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandName" />
 
     <ImageView
         android:id="@+id/brandLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/brand_logo"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="171dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="171dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="34dp"
+        app:layout_constraintBottom_toTopOf="@+id/tagLine"
+        app:layout_constraintEnd_toStartOf="@+id/brandName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/brand_logo" />
 
     <TextView
         android:id="@+id/orText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="367dp"
         android:fontFamily="@font/medium"
         android:text="or"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="192dp"
-        tools:layout_editor_absoluteY="491dp" />>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagLine" />>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

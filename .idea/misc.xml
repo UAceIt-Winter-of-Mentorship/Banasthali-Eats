@@ -7,14 +7,16 @@
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/drawable-v24/getstarted_btn.xml" value="0.1255" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/drawable-v24/googlebtn.xml" value="0.1085" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/drawable-v24/optionsbtn.xml" value="0.1255" />
-        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_boarding_page.xml" value="0.1" />
+        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_boarding_page.xml" value="0.22" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_loginSignupPage.xml" value="0.22" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_login_signup_page.xml" value="0.22" />
+        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_main.xml" value="0.11967361740707162" />
+        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_order_details.xml" value="0.22" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_order_page.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_order_placed.xml" value="0.14407866609662248" />
-        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_payment_page.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_signup_page.xml" value="0.5" />
+        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_order_placed.xml" value="0.22" />
+        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_payment_page.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/activity_signup_page.xml" value="0.22" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/menu.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ADITI TRIPATHI/AndroidStudioProjects/Banasthali-Eats/app/src/main/res/layout/snacks_repeat.xml" value="0.10471441523118767" />
       </map>

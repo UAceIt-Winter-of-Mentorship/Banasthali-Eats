@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BanasthaliEats">
         <activity
+            android:name=".order_details"
+            android:exported="false" />
+        <activity
             android:name=".order_placed"
             android:exported="false" />
         <activity
