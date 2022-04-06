@@ -4,52 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".payment_page">
 
     <TextView
         android:id="@+id/payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
         android:fontFamily="@font/semibold"
         android:text="Payment"
         android:textColor="@color/black"
         android:textSize="22dp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="38dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Address"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/semibold"
+        android:text="Address"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="76dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
     <TextView
         android:id="@+id/paymentMethod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment Method"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
         android:fontFamily="@font/semibold"
+        android:text="Payment Method"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="210dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="54dp"
         android:background="#F0F0F0"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:textAlignment="gravity"
+        app:layout_constraintBottom_toBottomOf="@+id/orderSum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <TextView
             android:id="@+id/cashOnDel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="13dp"
             android:fontFamily="@font/semibold"
             android:text="Cash on delivery"
             android:textColor="@color/black"
@@ -60,121 +77,190 @@
         android:id="@+id/orderSum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Summary"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="24dp"
         android:fontFamily="@font/semibold"
+        android:text="Order Summary"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="328dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/orderFrom"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Order from"
-        android:fontFamily="@font/semibold"
-        android:textColor="#767676"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:layout_marginTop="378dp"
+        android:background="#F0F0F0"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/canteenName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/semibold"
-        android:text="Balaji Canteen"
-        android:textColor="@color/black"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="415dp" />
+        <TextView
+            android:id="@+id/orderFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/semibold"
+            android:text="Order from"
+            android:textColor="#767676"
+            android:textSize="18dp" />
 
-    <TextView
-        android:id="@+id/canteenPlace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/semibold"
-        android:text="MITS Campus"
-        android:textColor="#767676"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="282dp"
-        tools:layout_editor_absoluteY="417dp" />
+        <TextView
+            android:id="@+id/canteenName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/semibold"
+            android:text="Balaji Canteen"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/canteenPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/semibold"
+            android:text="MITS Campus"
+            android:textColor="#767676"
+            android:textSize="16dp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/order1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pizza"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="31dp"
         android:fontFamily="@font/semibold"
+        android:text="Pizza"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <TextView
         android:id="@+id/price1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rs 120"
         android:fontFamily="@font/semibold"
+        android:text="Rs 120"
         android:textColor="#767676"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintStart_toStartOf="@+id/order1"
+        app:layout_constraintTop_toBottomOf="@+id/order1" />
 
     <TextView
         android:id="@+id/order2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pastry"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="39dp"
         android:fontFamily="@font/semibold"
+        android:text="Pastry"
         android:textColor="@color/black"
         android:textSize="20dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="596dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1" />
 
     <TextView
         android:id="@+id/price2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rs 40"
         android:fontFamily="@font/semibold"
+        android:text="Rs 40"
         android:textColor="#767676"
         android:textSize="16dp"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="617dp" />
+        app:layout_constraintStart_toStartOf="@+id/order2"
+        app:layout_constraintTop_toBottomOf="@+id/order2" />
 
     <TextView
         android:id="@+id/total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total"
+        android:layout_marginStart="16dp"
         android:fontFamily="@font/semibold"
+        android:text="Total"
         android:textColor="@color/black"
         android:textSize="22dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="710dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/totalPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/totalPrice" />
 
     <TextView
         android:id="@+id/totalPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="152dp"
         android:fontFamily="@font/semibold"
         android:text="Rs 160"
         android:textColor="@color/black"
         android:textSize="22dp"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="710dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price1" />
 
     <Button
         android:id="@+id/placeOrderBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
         android:background="@drawable/getstarted_btn"
         android:fontFamily="@font/medium"
         android:padding="20dp"
         android:text="Place order"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="778dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="126dp"
+        android:layout_marginBottom="129dp"
+        android:background="#F0F0F0"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/orderSum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/enterAdd"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/medium"
+            android:text="Enter Address"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="135dp" />
+
+        <TextView
+            android:id="@+id/addText"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/medium"
+            android:text="Text"
+
+            android:textColor="#767676"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="135dp" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

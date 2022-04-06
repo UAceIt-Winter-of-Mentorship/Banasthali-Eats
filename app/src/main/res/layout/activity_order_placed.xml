@@ -7,42 +7,75 @@
     tools:context=".order_placed">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/orderPlaced"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="22dp" />
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/semibold"
+        android:text="MITSGeats"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/opText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:layout_marginTop="186dp"
+        android:fontFamily="@font/semibold"
+        android:text="Your order has been placed"
+        android:textAlignment="center"
+        android:textColor="#767676"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/opText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="177dp"
-        tools:layout_editor_absoluteY="458dp" />
+        android:layout_marginStart="37dp"
+        android:fontFamily="@font/semibold"
+        android:text="Sit back and relax"
+        android:textColor="#767676"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/opImage"
+        app:layout_constraintTop_toBottomOf="@+id/opImage" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/toMainPageBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="774dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/getstarted_btn"
+        android:fontFamily="@font/medium"
+        android:padding="20dp"
+        android:text="Main page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/toOrderDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="782dp" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/getstarted_btn"
+        android:fontFamily="@font/medium"
+        android:padding="20dp"
+        android:text="Order details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/opImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opText1"
+        tools:srcCompat="@drawable/order_placed_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>

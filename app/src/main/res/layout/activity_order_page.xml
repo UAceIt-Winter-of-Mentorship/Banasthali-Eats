@@ -10,32 +10,45 @@
         android:id="@+id/brandName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="19dp"
         android:fontFamily="@font/semibold"
         android:text="MITSGeats"
         android:textColor="@color/black"
         android:textSize="22dp"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="38dp" />
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="376dp"
-        android:layout_height="35dp"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="86dp">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="770dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandName">
 
-        <SearchView
-            android:layout_width="179dp"
-            android:layout_height="match_parent" />
+
     </SearchView>
 
     <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/ll"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="150dp"
             android:orientation="horizontal">
 
             <Button
@@ -43,6 +56,7 @@
                 android:layout_width="65dp"
                 android:layout_height="40dp"
 
+                android:layout_marginRight="3dp"
                 android:background="@drawable/optionsbtn"
                 android:fontFamily="@font/semibold"
                 android:text="All" />
@@ -51,32 +65,31 @@
                 android:id="@+id/fastFoodBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
+                android:layout_marginRight="3dp"
                 android:background="@drawable/optionsbtn"
                 android:fontFamily="@font/semibold"
                 android:text="Fast Foods" />
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@android:drawable/ic_menu_add" />
 
             <Button
                 android:id="@+id/drinksBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="42dp"
+                android:layout_marginRight="3dp"
                 android:background="@drawable/optionsbtn"
                 android:fontFamily="@font/semibold"
                 android:text="Drinks" />
+
+
+            <Button
+                android:id="@+id/moreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:background="@drawable/optionsbtn"
+                android:fontFamily="@font/semibold"
+                android:text="More" />
         </LinearLayout>
     </HorizontalScrollView>
-
-    <LinearLayout
-        android:id="@+id/ll"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
